@@ -14,6 +14,7 @@ export class AppComponent {
     { title: 'Trash', url: '/folder/Trash', icon: 'trash' },
     { title: 'Spam', url: '/folder/Spam', icon: 'warning' }, */
     {title: 'Navegação', url:'navegacao', icon: 'locate'},
+    {title: 'Botões', url:'botoes', icon: 'heart'},
   ];
   public labels = ['Senac'];
   constructor() {}

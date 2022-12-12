@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'botoes',
+    loadChildren: () => import('./pages/botoes/botoes.module').then( m => m.BotoesPageModule)
   }
 ];
 
