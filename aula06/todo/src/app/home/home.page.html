@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-title>
+      Todo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-item-sliding *ngFor="let task of tasks">
+
+    <ion-item>
+      <ion-label>{{task.description}}</ion-label>
+        <ion-icon slot="start" name="radio-button-off"></ion-icon>
+
+      <ion-item-options side="end">
+        <ion-item-option (click)="apagar()">Apagar</ion-item-option>
+      </ion-item-options>
+    </ion-item>
+    
+  </ion-item-sliding>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="danger" (click)="showAdd()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
